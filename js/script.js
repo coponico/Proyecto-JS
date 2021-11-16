@@ -1,22 +1,22 @@
-let mensaje = prompt("Deja un mensaje:")
-let mensajeText = "Tu mensaje es:"
-let saludo = "¡Bienvenido! tu nombre es:"
-let nombre = prompt("Ingresa tu nombre")
-let apellido = prompt("Ahora el apellido pá")
-let edad = parseInt(prompt("¿Tu edad?"))
-let edadText = "Tu edad es"
-let numero1 = parseFloat(prompt("Número favorito"))
-let numeroText = "Tu número favorito es"
-let numero2 = 23
-let suerte1 = "si tu número favorito es"
-let suerte2 = "entonces tu número de la suerte es"
+// Saludo.
 
-console.log( `${saludo} ${nombre} ${apellido}`)
-console.log(`${edadText} ${edad}`)
-console.log(`${numeroText} ${numero1}`)
-console.log(`${suerte1} ${numero1} ${suerte2} ${numero1 + numero2}` )
-alert(`${mensajeText} ${mensaje}`)
+let saludo = prompt("Saluda como es debido")
+if (saludo == "Hola") console.log("¡Que muchacho tan educado! Saludaste correctamente")
+else  console.warn("Te falta educación, no saludaste de manera adecuada.")
 
 
-// Operaciones y concatenaciones
+// Número entre 10 y 50.
+
+let entre50 = prompt("Inserta un número")
+if (entre50 >= 10 && entre50 <= 50)  alert("Tu número se encuentra entre 10 y 50 y cumple con los requisitos.")
+else alert("El número es menor que 10 o mayor que 50.")
+
+
+// Número menor a 1000.
+
+let numero = prompt("Inserta otro número")
+if (numero <= 1000) alert("Tu número cumple los requisitos.") 
+else alert("Tu número no cumple con los requisitos (ser menor o igual que 1000)")
+
+
 
