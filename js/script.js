@@ -169,7 +169,10 @@ document.getElementById('botonClientes').addEventListener('click', () => {
         clientes.forEach((clienteArray, indice) => {
             divClientes.innerHTML += `
             <div id="cliente${indice}">
-            <p>${clienteArray.nombre}<p>
+            <p>Cliente: ${clienteArray.nombre} ${clienteArray.apellido}
+            DNI: ${clienteArray.DNI}
+            Mail: ${clienteArray.email}
+            Sueldo: ${cliente.sueldo}<p>
             <button id="boton${indice}" class="btn btn-dark">Eliminar</button>
             </div>
             
