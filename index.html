@@ -5,11 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final JS</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css"> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+    
 </head>
 <body>
-    <h1>Bienvenido a mi página de pruebas de JS</h1>
+    <nav class="navbar">
+        <ul class="navbar-ul">
+            <li class="navbar-ul-li"><a class="navbar-ul-li-a" data-toggle="modal" data-target="#exampleModal" href="#">
+                Iniciar sesión
+            </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="parrafo1">
+    <h1 id="saludo"></h1>
     <h2>Si llegaste acá, resolviste las innumerables alertas.</h2>
+</div>
+<div class="cart">
+    <button id="Carrito"><img src="img/carrito.png"></button>
+</div>
+<div class="sortButtons">
+<button id="sort1">Ordenar menor a mayor</button>
+<button id="sort2">Mostrar productos mayores o iguales a $1000</button>
+<button id="sort4">Mostrar los precios (en consola)</button>
+</div>
+
+<div id="Productos"></div>
+
+
+
+<div class="container">
+    <form id="formCliente">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" >
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" name="apellido" >
+        </div>
+        <div class="mb-3">
+            <label for="dni" class="form-label">DNI:</label>
+            <input type="number" class="form-control" id="DNI" name="DNI" >
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" >
+              </div>
+              <div class="mb-3">
+                <label for="estado" class="form-label">Sueldo:</label>
+                <input type="number" class="form-control" id="sueldo" name="sueldo" >
+            </div>
+            <button type="submit" class="btn btn-primary">Cargar tarea</button><br><br>
+        </form>
+    </div>
+    <br><br>
+    <button id="botonClientes" class="btn btn-dark">Mostrar Clientes</button>
+
+    <div id="divClientes"></div>
+    <p id="parrafoError"></p>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <label for="usuario" class="form-label">Usuario:</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" >
+                <label for="contraseña" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button id="iniciarSesion" type="button" class="btn btn-primary" data-dismiss="modal">Iniciar sesión</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    <br><br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
