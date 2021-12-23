@@ -3,8 +3,24 @@ body {
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
+    background-color: #1B4353;
 }
 
 * {
-    background-color: #FF6978;
+    font-size: 10px;
+    outline: none;
 }
+
+h1 {
+    color: #173753;
+}
+
+h2 {
+    color: #173753;
+}
+
+@import "navbar";
+
+@import "productos";
+
+@import "clientes";

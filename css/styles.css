@@ -3,61 +3,65 @@ body {
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
-  background-color: #FF6978; 
-}
+  background-color: #1B4353; }
 
+* {
+  font-size: 10px;
+  outline: none; }
 
+h1 {
+  color: #173753; }
 
-  h1 {
-    color: #FFFCF9;
-  }
-  h2 {
-    color: #FFFCF9;
-  }
+h2 {
+  color: #173753; }
 
-  .navbar-ul{
-    display: flex;
-    width: 100vh;
-    justify-content: flex-end;
+.navbar .navbar-ul .navbar-ul-li {
+  display: flex;
+  width: 100vh;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style-type: none; }
 
-  }
+.cart img {
+  width: 32px;
+  height: 32px; }
 
-  .navbar .navbar-ul {
-    text-decoration: none;
-    list-style-type: none;
-  }
-  .navbar-ul .navbar-ul .navbar-ul-li-a:active
-  {
-
-  }
-
-  #Productos {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    border: white 3px solid;
-  }
+#Productos {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  flex-flow: wrap;
+  background: rgba(109, 174, 219, 0.5);
+  border: white 1px solid; }
   #Productos .producto {
     margin: 10px;
-    border: 2px solid white;
-    padding: 10px;
-  }
+    border: 1px solid white;
+    padding: 10px; }
+    #Productos .producto img {
+      width: 500px;
+      height: 250px; }
 
-  #Productos .producto img {
-    width: 500px;
-    height: 250px;
-  }
+.container {
+  background-color: #2892D7;
+  width: 50rem;
+  height: 50rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem; }
+  .container #formCliente div label {
+    font-size: 1.6rem; }
+  .container #formCliente div input {
+    font-size: 1.6rem;
+    border: gray 2px solid; }
+  .container #formCliente div input:focus {
+    border-color: black 2px solid;
+    box-shadow: none; }
+  .container #formCliente .clienteBtn button {
+    font-size: 1.6rem; }
 
-  .cart img {
-    width: 32px;
-    height: 32px;
-  }
-
-  #divClientes {
-
-    padding: 1rem;
-    margin: 1rem;
-    width: 200px;
-    border: white 1px solid;
-    background-color: gray;
-  }
+#divClientes {
+  padding: 1rem;
+  margin: 1rem;
+  width: 200px;
+  border: white 1px solid;
+  background-color: lightseagreen; }

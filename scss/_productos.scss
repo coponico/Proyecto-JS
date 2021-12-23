@@ -1,0 +1,24 @@
+.cart img {
+    width: 32px;
+    height: 32px;
+}
+
+
+#Productos {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    flex-flow: wrap;
+    background: rgba(109, 174, 219, 0.5);
+    border: white 1px solid;
+        .producto {
+            margin: 10px;
+            border: 1px solid white;
+            padding: 10px;
+            img {
+                width: 500px;
+                height: 250px;
+            }
+        }
+    
+}
