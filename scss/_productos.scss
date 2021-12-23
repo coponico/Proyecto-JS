@@ -7,17 +7,58 @@
 #Productos {
     display: flex;
     justify-content: center;
-    margin: 1rem;
     flex-flow: wrap;
     background: rgba(109, 174, 219, 0.5);
-    border: white 1px solid;
         .producto {
-            margin: 10px;
+            margin: 1rem;
             border: 1px solid white;
-            padding: 10px;
+            padding: 0.5rem;
+            .precioF {
+                font-size: 1.6rem;
+            }
             img {
                 width: 500px;
                 height: 250px;
+            }
+            h4,
+            p {
+                color: White;
+                margin: 1rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+            .justifyProductos {
+                display: grid;
+                margin: 1rem;
+                grid-template-columns: 40% 15% 45%;
+                grid-template-rows: 30% 35% 35%;
+                #comprar {
+                    grid-column: 0/1;
+                    grid-row: 2;
+                    padding: 1rem;
+                    background-color: rgba($color: blue, $alpha: .5);
+                }
+                #carrito {
+                    grid-column: 0/1;
+                    grid-row: 3;
+                    padding: 1rem;
+                    background-color: rgba($color: green, $alpha: .5);
+                }
+                label {
+                    grid-row: 0;
+                    grid-column: 3;
+                    font-size: 1.6rem;
+                    color: white;
+                }
+                .cuotas {
+                    grid-row: 2;
+                    grid-column: 3;
+                }
+                .botonElegir {
+                    grid-row: 3;
+                    grid-column: 3;
+                }
             }
         }
     

@@ -10,10 +10,10 @@ body {
   outline: none; }
 
 h1 {
-  color: #173753; }
+  color: white; }
 
 h2 {
-  color: #173753; }
+  color: white; }
 
 .navbar .navbar-ul .navbar-ul-li {
   display: flex;
@@ -29,17 +29,49 @@ h2 {
 #Productos {
   display: flex;
   justify-content: center;
-  margin: 1rem;
   flex-flow: wrap;
-  background: rgba(109, 174, 219, 0.5);
-  border: white 1px solid; }
+  background: rgba(109, 174, 219, 0.5); }
   #Productos .producto {
-    margin: 10px;
+    margin: 1rem;
     border: 1px solid white;
-    padding: 10px; }
+    padding: 0.5rem; }
+    #Productos .producto .precioF {
+      font-size: 1.6rem; }
     #Productos .producto img {
       width: 500px;
       height: 250px; }
+    #Productos .producto h4,
+    #Productos .producto p {
+      color: White;
+      margin: 1rem; }
+    #Productos .producto p {
+      font-size: 1.6rem; }
+    #Productos .producto .justifyProductos {
+      display: grid;
+      margin: 1rem;
+      grid-template-columns: 40% 15% 45%;
+      grid-template-rows: 30% 35% 35%; }
+      #Productos .producto .justifyProductos #comprar {
+        grid-column: 0/1;
+        grid-row: 2;
+        padding: 1rem;
+        background-color: rgba(0, 0, 255, 0.5); }
+      #Productos .producto .justifyProductos #carrito {
+        grid-column: 0/1;
+        grid-row: 3;
+        padding: 1rem;
+        background-color: rgba(0, 128, 0, 0.5); }
+      #Productos .producto .justifyProductos label {
+        grid-row: 0;
+        grid-column: 3;
+        font-size: 1.6rem;
+        color: white; }
+      #Productos .producto .justifyProductos .cuotas {
+        grid-row: 2;
+        grid-column: 3; }
+      #Productos .producto .justifyProductos .botonElegir {
+        grid-row: 3;
+        grid-column: 3; }
 
 .container {
   background-color: #2892D7;

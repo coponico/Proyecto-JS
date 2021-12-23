@@ -1,7 +1,7 @@
 let iniciarSesion = document.getElementById('iniciarSesion')
 iniciarSesion.addEventListener('click', (e) => {
     if (contraseña.length > 8) {
-        
+
     }
 })
 
@@ -29,35 +29,33 @@ arrayAutos.forEach(autoEnArray => {
     div.classList.add('producto')
     div.innerHTML += `
     
-            <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
-            <img src="img/${autoEnArray.imagen}" alt="">
-            <p class="productoAño">Año: ${autoEnArray.año}</p>
-            <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
-            <button id="comprar">Comprar</button>
-            <button id="carrito">Añadir al carrito</button>
-            <label for="cuotas">Cuotas</label>
-            
-            
-            <select id="cuotas${autoEnArray.id}" name="cuotas">
-                <option value="0"></option>
-                <option value="3">3 cuotas</option>
-                <option value="6">6 cuotas</option>
-                <option value="12">12 cuotas</option>
-            </select>
-                
-            <button type="button" id="producto${autoEnArray.id}" class="botonElegir">
-                Elegir
-            </button>
-                
-            <div id="precioF${autoEnArray.id}"></div>
-         
+    <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
+    <img src="img/${autoEnArray.imagen}" alt="">
+    <p class="productoAño">Año: ${autoEnArray.año}</p>
+    <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
+    <div class="justifyProductos">
+    <button id="comprar">Comprar</button>
+    <button id="carrito">Añadir al carrito</button>
+    <label for="cuotas">Cuotas</label>
+    <select id="cuotas${autoEnArray.id}" class="cuotas" name="cuotas">
+        <option value="0"></option>
+        <option value="3">3 cuotas</option>
+        <option value="6">6 cuotas</option>
+        <option value="12">12 cuotas</option>
+    </select>
+    
+    <button type="button" id="producto${autoEnArray.id}" class="botonElegir">
+    Elegir
+    </button>
+        </div>
+    <div id="precioF${autoEnArray.id}" class="precioF"></div>
         `
-        productos.appendChild(div)
+    productos.appendChild(div)
 
-        let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
-        btnElegir.addEventListener('click', ()=>{
-            elegir(autoEnArray.id)
-        })
+    let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
+    btnElegir.addEventListener('click', () => {
+        elegir(autoEnArray.id)
+    })
 })
 
 button1.addEventListener("click", () => {
@@ -68,35 +66,33 @@ button1.addEventListener("click", () => {
         div.classList.add('producto')
         div.innerHTML += `
         
-                <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
-                <img src="img/${autoEnArray.imagen}" alt="">
-                <p class="productoAño">Año: ${autoEnArray.año}</p>
-                <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
-                <button id="comprar">Comprar</button>
-                <button id="carrito">Añadir al carrito</button>
-                <label for="cuotas">Cuotas</label>
-                
-                
-                <select id="cuotas${autoEnArray.id}" name="cuotas">
-                    <option value="0"></option>
-                    <option value="3">3 cuotas</option>
-                    <option value="6">6 cuotas</option>
-                    <option value="12">12 cuotas</option>
-                </select>
-                    
-                <button type="button" id="producto${autoEnArray.id}" class="botonElegir">
-                    Elegir
-                </button>
-                    
-                <div id="precioF${autoEnArray.id}"></div>
-             
+        <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
+        <img src="img/${autoEnArray.imagen}" alt="">
+        <p class="productoAño">Año: ${autoEnArray.año}</p>
+        <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
+        <div class="justifyProductos">
+        <button id="comprar">Comprar</button>
+        <button id="carrito">Añadir al carrito</button>
+        <label for="cuotas">Cuotas</label>
+        <select id="cuotas${autoEnArray.id}" class="cuotas" name="cuotas">
+            <option value="0"></option>
+            <option value="3">3 cuotas</option>
+            <option value="6">6 cuotas</option>
+            <option value="12">12 cuotas</option>
+        </select>
+        
+        <button type="button" id="producto${autoEnArray.id}" class="botonElegir">
+        Elegir
+        </button>
+            </div>
+        <div id="precioF${autoEnArray.id}" class="precioF"></div>
             `
-            productos.appendChild(div)
-    
-            let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
-            btnElegir.addEventListener('click', ()=>{
-                elegir(autoEnArray.id)
-            })
+        productos.appendChild(div)
+
+        let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
+        btnElegir.addEventListener('click', () => {
+            elegir(autoEnArray.id)
+        })
     })
 })
 
@@ -108,36 +104,33 @@ button2.addEventListener('click', () => {
         let div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML += `
+        <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
+        <img src="img/${autoEnArray.imagen}" alt="">
+        <p class="productoAño">Año: ${autoEnArray.año}</p>
+        <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
+        <div class="justifyProductos">
+        <button id="comprar">Comprar</button>
+        <button id="carrito">Añadir al carrito</button>
+        <label for="cuotas">Cuotas</label>
+        <select id="cuotas${autoEnArray.id}" class="cuotas" name="cuotas">
+            <option value="0"></option>
+            <option value="3">3 cuotas</option>
+            <option value="6">6 cuotas</option>
+            <option value="12">12 cuotas</option>
+        </select>
         
-                <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
-                <img src="img/${autoEnArray.imagen}" alt="">
-                <p class="productoAño">Año: ${autoEnArray.año}</p>
-                <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
-                <button id="comprar">Comprar</button>
-                <button id="carrito">Añadir al carrito</button>
-                <label for="cuotas">Cuotas</label>
-                
-                
-                <select id="cuotas${autoEnArray.id}" name="cuotas">
-                    <option value="0"></option>
-                    <option value="3">3 cuotas</option>
-                    <option value="6">6 cuotas</option>
-                    <option value="12">12 cuotas</option>
-                </select>
-                    
-                <button type="button" id="producto${autoEnArray.id}" class="botonElegir">
-                    Elegir
-                </button>
-                    
-                <div id="precioF${autoEnArray.id}"></div>
-             
+        <button type="button" id="producto${autoEnArray.id}" class="botonElegir">
+        Elegir
+        </button>
+            </div>
+        <div id="precioF${autoEnArray.id}" class="precioF"></div>
             `
-            productos.appendChild(div)
-    
-            let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
-            btnElegir.addEventListener('click', ()=>{
-                elegir(autoEnArray.id)
-            })
+        productos.appendChild(div)
+
+        let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
+        btnElegir.addEventListener('click', () => {
+            elegir(autoEnArray.id)
+        })
     })
 })
 
@@ -146,38 +139,37 @@ const elegir = (id) => {
     console.log(id)
 
     let autoSeleccionado = arrayAutos.find(item => item.id == id)
-    
+
     let cuotasSeleccionadas = document.getElementById(`cuotas${id}`).value
-   if(cuotasSeleccionadas >= 1){
-      let precioConCuotas = autoSeleccionado.precio / parseInt(cuotasSeleccionadas)
-    console.log(precioConCuotas);
-    let precioF = document.getElementById(`precioF${id}`)
-    precioF.innerHTML = `$${parseInt(precioConCuotas)}` 
-   }else{
-    let precioF = document.getElementById(`precioF${id}`)
-    precioF.innerHTML = `$${parseInt(autoSeleccionado.precio)}` 
-   }
-    
+    if (cuotasSeleccionadas >= 1) {
+        let precioConCuotas = autoSeleccionado.precio / parseInt(cuotasSeleccionadas)
+        console.log(precioConCuotas);
+        let precioF = document.getElementById(`precioF${id}`)
+        precioF.innerHTML = `Precio final: $${parseInt(precioConCuotas)}`
+    } else {
+        let precioF = document.getElementById(`precioF${id}`)
+        precioF.innerHTML = `Precio final: $${parseInt(autoSeleccionado.precio)}`
+    }
+
 }
 
 // botonElegir.forEach(it => it.addEventListener("click", elegir))
 
 class Cliente {
     constructor(nombre, apellido, dni, email, sueldo) {
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.dni = dni;
-    this.email = email;
-    this.sueldo = sueldo;
-}}
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.email = email;
+        this.sueldo = sueldo;
+    }
+}
 
 let clientes = []
 
-if(localStorage.getItem('clientes')) {
+if (localStorage.getItem('clientes')) {
     clientes = JSON.parse(localStorage.getItem('clientes'))
-}
-
-else {
+} else {
     clientes = []
 }
 
@@ -195,7 +187,7 @@ formCliente.addEventListener('submit', (e) => {
     let sueldoCliente = document.getElementById("sueldo").value
 
     let objetoCliente = new Cliente(nombreCliente, apellidoCliente, dniCliente, emailCliente, sueldoCliente)
-    
+
 
     clientes.push(objetoCliente)
 
@@ -207,7 +199,7 @@ formCliente.addEventListener('submit', (e) => {
 document.getElementById('botonClientes').addEventListener('click', () => {
     let ClientesStorage = JSON.parse(localStorage.getItem('clientes'))
 
-    if(divClientes.children.length == 0) {
+    if (divClientes.children.length == 0) {
         clientes.forEach((clienteArray, indice) => {
             divClientes.innerHTML += `
             <div id="cliente${indice}">
@@ -216,7 +208,7 @@ document.getElementById('botonClientes').addEventListener('click', () => {
             </div>
             
             `
-        })  
+        })
         ClientesStorage.forEach((clienteArray, indice) => {
             document.getElementById(`boton${indice}`).addEventListener('click', () => {
                 document.getElementById(`cliente${indice}`).remove()
