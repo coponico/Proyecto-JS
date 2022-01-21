@@ -1,0 +1,58 @@
+[
+  {
+    "id":1,
+    "modelo": "Mobi",
+    "marca": "Fiat",
+    "anio": 2015,
+    "precio": 3200,
+    "imagen": "fiatmobi.jpg"
+  },
+  {
+    "id":2,
+    "modelo": "Uno",
+    "marca": "Fiat",
+    "anio": 2017,
+    "precio": 999,
+    "imagen": "fiatuno.jpg"
+  },
+  {
+    "id":3,
+    "modelo": "500",
+    "marca": "Fiat",
+    "anio": 2002,
+    "precio": 2300,
+    "imagen": "fiat500.jpg"
+  },
+  {
+    "id":4,
+    "modelo": "Argo",
+    "marca": "Fiat",
+    "anio": 2013,
+    "precio": 1200,
+    "imagen": "fiatargo.jpg"
+  },
+  {
+    "id":5,
+    "modelo": "Joy",
+    "marca": "Chevrolet",
+    "anio": 2021,
+    "precio": 5000,
+    "imagen": "chevroletjoy.jpg"
+  },
+  {
+    "id":6,
+    "modelo": "Mustang",
+    "marca": "Ford",
+    "anio": 2018,
+    "precio": 6250,
+    "imagen": "fordmustang.jpg"
+  },
+  {
+    "id":7,
+    "modelo": "Raptor",
+    "marca": "Ford",
+    "anio": 2020,
+    "precio": 1200,
+    "imagen": "fordraptor.jpg"
+  }
+]
