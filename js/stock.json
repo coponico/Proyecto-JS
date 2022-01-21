@@ -53,6 +53,6 @@
     "marca": "Ford",
     "anio": 2020,
     "precio": 1200,
-    "imagen": "fordraptor.jpg"
+    "imagen": "img/fordraptor.jpg"
   }
 ]
