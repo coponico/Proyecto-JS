@@ -45,7 +45,7 @@
     "marca": "Ford",
     "anio": 2018,
     "precio": 6250,
-    "imagen": "img/fordmustang.jpg"
+    "imagen": "fordmustang.jpg"
   },
   {
     "id":7,
@@ -53,6 +53,6 @@
     "marca": "Ford",
     "anio": 2020,
     "precio": 1200,
-    "imagen": "../img/fordraptor.jpg"
+    "imagen": "fordraptor.jpg"
   }
 ]

@@ -31,7 +31,7 @@ function comenzar() {
             div.innerHTML += `
             
             <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
-            <img src="../img/${autoEnArray.imagen}" alt="">
+            <img src="img/${autoEnArray.imagen}" alt="">
             <p class="productoAño">Año: ${autoEnArray.anio}</p>
             <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
             <div class="justifyProductos">
