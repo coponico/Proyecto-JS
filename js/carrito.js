@@ -6,7 +6,7 @@ function carritoAgregar(id) {
     carritoAuto.push(productoAgregar)
     let div = document.createElement('div')
     div.innerHTML = `<div class="card" style="width: 18rem;">
-                        <img src="../img/${productoAgregar.imagen}" class="card-img-top" alt="...">
+                        <img src="img/${productoAgregar.imagen}" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">${productoAgregar.modelo}</h5>
                         <p class="card-text">${productoAgregar.marca}</p>
