@@ -10,8 +10,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
 
@@ -19,20 +17,15 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="navbar-ul">
-            <li class="navbar-ul-li"><a class="navbar-ul-li-a" data-toggle="modal" data-target="#modalIniciarSesion" href="#">
-                    Iniciar sesión
-                </a>
-            </li>
-        </ul>
-    </nav>
     <div class="parrafo1">
         <h1 id="saludo"></h1>
         <h2>Si llegaste acá, resolviste las innumerables alertas.</h2>
     </div>
     <div class="cart">
-        <button id="carrito"><img src="img/carrito.png"></button>
+        <button id="carrito" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img src="img/carrito.png">
+          </button>
+        
         <div class="modal fade" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -58,13 +51,38 @@
     <div class="sortButtons">
         <button id="sort1">Ordenar menor a mayor</button>
         <button id="sort2">Mostrar productos mayores o iguales a $1000</button>
-        <button id="sort4">Mostrar los precios (en consola)</button>
     </div>
 
-    <div id="Productos"></div>
+    <div id="Productos">
+
+    </div>
+
+    <!-- Modal Carrito -->
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="contenedorCarrito">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-    <br><br>
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
@@ -72,8 +90,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="js/script.js"></script>
     <script src="js/stock.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

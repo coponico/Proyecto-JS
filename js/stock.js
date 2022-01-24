@@ -31,4 +31,5 @@ $.getJSON('js/stock.json', function (data){
         )
     });
     comenzar()
+    recuperar()
 })

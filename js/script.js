@@ -1,26 +1,11 @@
-let iniciarSesion = document.getElementById('iniciarSesion')
-iniciarSesion.addEventListener('click', (e) => {
-    if (contraseña.length > 8) {
-
-    }
-})
 
 function comenzar() {
-        
-        
-        for (let autoEnArray of arrayAutos) {
-            
-            console.log(autoEnArray)
-        }
-        
         let button1 = document.getElementById("sort1")
         let button2 = document.getElementById("sort2")
         let button3 = document.getElementById("sort3")
         let button4 = document.getElementById("sort4")
         
-        button4.addEventListener('click', () => {
-            console.log("Solo precios", arrayAutos.map(arrayAutos => arrayAutos = arrayAutos.precio))
-        })
+
         
         
         let productos = document.getElementById("Productos");
@@ -56,6 +41,11 @@ function comenzar() {
         let btnElegir = document.getElementById(`producto${autoEnArray.id}`)
         btnElegir.addEventListener('click', () => {
             elegir(autoEnArray.id)
+        })
+
+        let agregar = document.getElementById(`carrito${autoEnArray.id}`)
+        agregar.addEventListener('click', () => {
+            carritoAgregar(autoEnArray.id)
         })
     })
 
@@ -137,14 +127,11 @@ function comenzar() {
         
         const elegir = (id) => {
             
-            console.log(id)
-            
             let autoSeleccionado = arrayAutos.find(item => item.id == id)
             
             let cuotasSeleccionadas = document.getElementById(`cuotas${id}`).value
             if (cuotasSeleccionadas >= 1) {
                 let precioConCuotas = autoSeleccionado.precio / parseInt(cuotasSeleccionadas)
-                console.log(precioConCuotas);
             let precioF = document.getElementById(`precioF${id}`)
             precioF.innerHTML = `Precio final: $${parseInt(precioConCuotas)}`
         } else {
@@ -153,5 +140,9 @@ function comenzar() {
         }
         
     }
+
+    
+
+
 }
 
