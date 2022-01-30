@@ -54,5 +54,21 @@
     "anio": 2020,
     "precio": 1200,
     "imagen": "fordraptor.jpg"
-  }
+  },
+  {
+  "id":8,
+  "modelo": "Yaris",
+  "marca": "Toyota",
+  "anio": 2011,
+  "precio": 1125,
+  "imagen": "toyotayaris.jpg"
+},
+{
+"id":9,
+"modelo": "Corolla",
+"marca": "Toyota",
+"anio": 2021,
+"precio": 4500,
+"imagen": "toyotacorolla.jpg"
+}
 ]

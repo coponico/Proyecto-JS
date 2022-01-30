@@ -3,7 +3,7 @@ body {
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    background-color: #1B4353;
+    background-color: rgb(219, 54, 54);
 }
 
 * {
@@ -24,3 +24,5 @@ h2 {
 @import "productos";
 
 @import "clientes";
+
+@import "barra-carrito.scss";

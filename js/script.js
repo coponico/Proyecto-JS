@@ -46,8 +46,16 @@ function comenzar() {
         let agregar = document.getElementById(`carrito${autoEnArray.id}`)
         agregar.addEventListener('click', () => {
             carritoAgregar(autoEnArray.id)
+            Toastify({
+                text: "Producto agregado",
+                className: "info",
+                style: {
+                  background: "green",
+                }
+              }).showToast();
         })
     })
+
 
     button1.addEventListener("click", () => {
         let menorAMayor = arrayAutos.sort((autoA, autoB) => autoA.precio - autoB.precio)
@@ -97,7 +105,7 @@ function comenzar() {
                 div.innerHTML += `
                 <h4 class="productoNombre">${autoEnArray.marca} ${autoEnArray.modelo}</h4>
                 <img src="img/${autoEnArray.imagen}" alt="">
-                <p class="productoAño">Año: ${autoEnArray.año}</p>
+                <p class="productoAño">Año: ${autoEnArray.anibo}</p>
                 <p class="productoPrecio">Precio: ${autoEnArray.precio}</p>
                 <div class="justifyProductos">
                 <button id="comprar">Comprar</button>

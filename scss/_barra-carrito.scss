@@ -1,0 +1,21 @@
+.cart 
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+
+    #carrito {
+        border: 3px solid rgb(216, 187, 187);
+        border-radius: 15px;
+        background-color: rgba(26, 25, 25, 0.144);
+        }
+        #carrito:hover {
+            background-color: rgba(26, 25, 25, 0.404);
+            border: 3px solid rgb(185, 167, 167);
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            
+        }
+    }

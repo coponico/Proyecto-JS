@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final JS</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,15 +15,20 @@
 
 
 
+
+
 </head>
 
 <body>
+
+  </div>
+  </div>
     <div class="parrafo1">
         <h1 id="saludo"></h1>
-        <h2>Si llegaste acá, resolviste las innumerables alertas.</h2>
+        <h2>Zona Autos, tu auto en un instante</h2>
     </div>
     <div class="cart">
-        <button id="carrito" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button id="carrito" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
             <img src="img/carrito.png">
           </button>
         
@@ -48,6 +54,7 @@
     </div>
     </div>
 
+  <section class="content">
     <div class="sortButtons">
         <button id="sort1">Ordenar menor a mayor</button>
         <button id="sort2">Mostrar productos mayores o iguales a $1000</button>
@@ -56,6 +63,8 @@
     <div id="Productos">
 
     </div>
+
+  </section>
 
     <!-- Modal Carrito -->
     
@@ -73,7 +82,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-success">Comprar</button>
             </div>
           </div>
         </div>
@@ -90,6 +99,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="js/stock.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/script.js"></script>
